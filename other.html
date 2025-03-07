@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Page - Bryan's Shoes Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #1e73be;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+    .about-us, .careers, .contact-us {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.careers ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.careers ul li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+/* Contact Form */
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-us input, 
+.contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1e73be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #135a96;
+}
+</style>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Shoe Store Logo">
+        </div>
+        <h1>Bryan's Shoes Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="myshop.html">My Shop</a></li>
+                <li><a href="other.html">Other Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>Founded in 2020, Bryan's Shoes Shop is committed to providing high-quality footwear at affordable prices. 
+               We specialize in top brands like Nike, Adidas, and Anta, ensuring our customers get only the best.</p>
+            <p>Our mission is to bring comfort, style, and performance to every step you take.</p>
+        </section>
+
+        <section class="careers">
+            <h2>Careers</h2>
+            <p>Join our team and be part of an exciting retail journey! We are currently hiring for the following positions:</p>
+            <ul>
+                <li>👟 *Sales Associate* – Assist customers and manage sales.</li>
+                <li>📦 *Inventory Manager* – Keep track of stocks and orders.</li>
+                <li>📢 *Marketing Specialist* – Help promote our brand online and offline.</li>
+            </ul>
+            <p><strong>How to Apply:</strong> Send your resume to <a href="mailto:careers@bryansshoeshop.com">careers@bryansshoeshop.com</a></p>
+        </section>
+
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <p>📍 Address: 123 Shoe Street, Manila, Philippines</p>
+            <p>📞 Phone: +63 912 345 6789</p>
+            <p>📧 Email: <a href="mailto:info@bryansshoeshop.com">info@bryansshoeshop.com</a></p>
+
+            <h3>Send us a message</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

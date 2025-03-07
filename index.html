@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan's Shoes Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #1e73be;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Product Sections */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.product img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+.product-info h2 {
+    color: #1e73be;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #555;
+}
+  </style>
+</style>
+<body>
+
+    <header>
+        <h1>Bryan's Shoes Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="myshop.html">My Shop</a></li>
+                <li><a href="other.html">Other Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="img/shoe1.jpg" alt="Nike Shoe" class="product-img">
+            <div class="product-info">
+                <h2>Nike</h2>
+                <p>is an American athletic footwear and apparel corporation headquartered near Beaverton, Oregon, United States.</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="img/shoe2.jpg" alt="Anta Shoe" class="product-img">
+            <div class="product-info">
+                <h2>Anta</h2>
+                <p>Anta is the world's third largest sports group, with over 50 retail locations in the Philippines.</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="img/shoe3.jpg" alt="Adidas Shoe" class="product-img">
+            <div class="product-info">
+                <h2>Adidas</h2>
+                <p>It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
